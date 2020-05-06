@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Speedometer</title>
+    <script src="def.js"></script>
+</head>
+<body onload='draw(0);'>
+    <canvas id="speedometer" width="440" height="220">Canvas not available.</canvas>
+  <div>
+        <form id="drawTemp" method="get" action="/action_page.php">
+            <input type="text" id="txtSpeed" name="txtSpeed" value="20" maxlength="2"/>
+            <input type="button" value="Enter" onclick="drawWithInputValue();">
+        </form>
+    </div>  
+</body>
+</html>
